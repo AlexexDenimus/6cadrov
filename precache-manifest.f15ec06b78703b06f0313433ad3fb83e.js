@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "856e1d121664aa91c90a65870fd9041b",
+    "revision": "bd35a431c38578730cebc98ebdf43bec",
     "url": "/6cadrov/index.html"
   },
   {
-    "revision": "f3469c825f2ddfe983fa",
+    "revision": "cfd8bf1422390b1623e1",
     "url": "/6cadrov/static/css/main.34de6062.chunk.css"
   },
   {
-    "revision": "6921df3e5f6364ceacaa",
-    "url": "/6cadrov/static/js/2.8feacc67.chunk.js"
+    "revision": "8de5bb13f4012bbf024b",
+    "url": "/6cadrov/static/js/2.2f5571d4.chunk.js"
   },
   {
-    "revision": "f3469c825f2ddfe983fa",
-    "url": "/6cadrov/static/js/main.dddff0f8.chunk.js"
+    "revision": "cfd8bf1422390b1623e1",
+    "url": "/6cadrov/static/js/main.638a774e.chunk.js"
   },
   {
     "revision": "d23e8bdee918cc0e0561",
