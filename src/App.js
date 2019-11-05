@@ -29,8 +29,6 @@ function App() {
 
   const currentProgress = currentPage/distance*100;
 
-  console.log(currentProgress)
-
   const handleFirstClick = () => {
     if (AType === "current") {
       setCurrentPage(2);
@@ -44,7 +42,6 @@ function App() {
 
   const handleNextClick = () => {
     setCurrentPage(currentPage + 1);
-    console.log(AType, currentPage, distance)
   }
 
   const handleAChange = (event) => {
@@ -76,8 +73,7 @@ function App() {
     }
     return setCh(parseInt(OP.current.value) / parseInt(B.current.value))
   }
-
-  console.log(AType, distance, currentPage, A, )
+  
   return (
     <Body>
     <ProgressBar progress={currentProgress} />

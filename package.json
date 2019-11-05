@@ -1,7 +1,7 @@
 {
   "name": "6cadrov",
   "version": "0.1.0",
-  "homepage": "https://alexexdenimus.github.io/6cadrov/",
+  "homepage": "https://alexexdenimus.github.io/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "netlify-cms-app": "^2.9.7",
