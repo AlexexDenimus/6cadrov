@@ -44,6 +44,11 @@ function App() {
     setCurrentPage(currentPage + 1);
   }
 
+  const handleLastClick = () => {
+    setCurrentPage(currentPage + 1);
+    setA(DP + Ch);
+  }
+
   const handleAChange = (event) => {
     event.preventDefault();
     setA(parseInt(Chr.current.value) * parseInt(Kn.current.value))
@@ -56,12 +61,10 @@ function App() {
         return setDP(NaN);
       }
       setDP(parseInt(Apl.current.value) - parseInt(Ab.current.value))
-      setA(DP + Ch)
       return;
     }
     if (AType === 'swap'){
       setDP(parseInt(Apl.current.value) * parseInt(Ab.current.value))
-      setA(DP + Ch)
       return;
     }
   }
@@ -135,7 +138,7 @@ function App() {
           </Root>) 
         }
         {(currentPage === 4 && distance === 5 && AType === 'upgrade') && 
-          (<Root title="Введите данные для вычисления дополнительной потребности в кадрах" onClick={handleNextClick} disabled={isNaN(DP) ? true : false}>
+          (<Root title="Введите данные для вычисления дополнительной потребности в кадрах" onClick={handleLastClick} disabled={isNaN(DP) ? true : false}>
             <h3>ДП = Апл - Аб = {DP}</h3>
             <Flex flexDirection="row" alignItems="center" justifyContent="space-between">
             <label htmlFor="common">Общая потребность в специалистах в планируемый период (Апл)</label>
@@ -150,7 +153,7 @@ function App() {
           </Root>) 
         }
           {(currentPage === 4 && distance === 5 && AType === 'swap') && 
-            (<Root title="Введите данные для вычисления дополнительной потребности в кадрах" onClick={handleNextClick} disabled={isNaN(DP) ? true : false}>
+            (<Root title="Введите данные для вычисления дополнительной потребности в кадрах" onClick={handleLastClick} disabled={isNaN(DP) ? true : false}>
               <h3>ДП = Апл * Кв = {DP.toFixed()}</h3>
               <Flex flexDirection="row" alignItems="center" justifyContent="space-between">
               <label htmlFor="common">Общая потребность в специалистах в планируемый период (Апл)</label>
