@@ -74,7 +74,7 @@ function App() {
     if (parseInt(B.current.value) === 0 && parseInt(OP.current.value) > 0) {
       return setCh(NaN);
     }
-    return setCh(parseInt(OP.current.value) / parseInt(B.current.value));
+    return setCh(Math.ceil(parseInt(OP.current.value) / parseInt(B.current.value)));
   };
 
   return (
