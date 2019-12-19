@@ -10,7 +10,7 @@ const Heading = styled.h1`
 
 const Body = styled.div`
   width: 900px;
-  margin: 300px auto 0;
+  margin: 150px auto 0;
 `;
 
 function App() {
@@ -74,7 +74,9 @@ function App() {
     if (parseInt(B.current.value) === 0 && parseInt(OP.current.value) > 0) {
       return setCh(NaN);
     }
-    return setCh(Math.ceil(parseInt(OP.current.value) / parseInt(B.current.value)));
+    return setCh(
+      Math.ceil(parseInt(OP.current.value) / parseInt(B.current.value))
+    );
   };
 
   return (
@@ -160,7 +162,7 @@ function App() {
           onClick={handleNextClick}
           disabled={isNaN(Ch) ? true : false}
         >
-          <h3>Ч = ОП / В = {Math.ceil(Ch)} человек</h3>
+          <h3>Ч = ОП / В = {Math.ceil(Ch)} человек(а)</h3>
           <Flex
             flexDirection="row"
             alignItems="center"
@@ -231,7 +233,7 @@ function App() {
           onClick={handleLastClick}
           disabled={isNaN(DP) ? true : false}
         >
-          <h3>ДП = Апл - Аб = {DP} человек</h3>
+          <h3>ДП = Апл - Аб = {DP} человек(а)</h3>
           <Flex
             flexDirection="row"
             alignItems="center"
@@ -276,7 +278,7 @@ function App() {
           onClick={handleLastClick}
           disabled={isNaN(DP) ? true : false}
         >
-          <h3>ДП = Апл * Кв = {DP.toFixed()} человек</h3>
+          <h3>ДП = Апл * Кв = {DP.toFixed()} человек(а)</h3>
           <Flex
             flexDirection="row"
             alignItems="center"
@@ -320,7 +322,7 @@ function App() {
           noButton
         >
           <Box alignSelf="center">
-            <Heading>{A.toFixed()} человек</Heading>
+            <Heading>{A.toFixed()} человек(а)</Heading>
           </Box>
         </Root>
       )}
